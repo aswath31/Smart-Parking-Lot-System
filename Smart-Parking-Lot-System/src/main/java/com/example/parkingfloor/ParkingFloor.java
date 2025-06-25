@@ -1,6 +1,5 @@
 package com.example.parkingfloor;
 public class ParkingFloor {
-  // DIP
 
 
   Map<ParkingSpotType, Map<String, ParkingSpot>> parkingSpots;
@@ -71,7 +70,7 @@ public class ParkingFloor {
 
 
   public synchronized ParkingSpot getAvailableParkingSpotForVehicle(ParkingSpotType spotType) {
-    // KISS
+ 
     if (isFloorUnderMaintenance) {
       displayBoard.showParkingFloorMaintenanceMessage();
       return null;
